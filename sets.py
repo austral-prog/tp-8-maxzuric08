@@ -16,6 +16,6 @@ def check_drinks(drink_name, drink_ingredients):
     for i in drink_ingredients:
         new_set.add(i)
     if len(new_set.intersection(ALCOHOLS))>0:
-        return drink_name.append('Cocktail')
+        return str(drink_name)+'Cocktail'
     else:
-        return drink_name.append('Mocktail')
+        return str(drink_name)+'Mocktail'
