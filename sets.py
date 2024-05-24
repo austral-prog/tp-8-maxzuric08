@@ -6,7 +6,8 @@ def clean_ingredients(dish_name, dish_ingredients):
     for i in dish_ingredients:
         if i not in new_set:
             new_set.add(i)
-    return (dish_name,new_set)
+    new_format= dish_name,new_set
+    return new_format
 
 
 
