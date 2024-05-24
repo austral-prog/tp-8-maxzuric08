@@ -11,9 +11,11 @@ def get_coordinate(record):
 
 
 def convert_coordinate(coordinate):
-    new_format=()
-    for i in coordinate:
-        new_format+=i
+    new_format=coordinate[0],coordinate[1]
+    return new_format
+    
+        
+        
     return new_format
 
 """Split the given coordinate into tuple containing its individual components.
