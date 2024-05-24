@@ -12,8 +12,10 @@ def clean_ingredients(dish_name, dish_ingredients):
 
 
 def check_drinks(drink_name, drink_ingredients):
-    if len(drink_ingredients.intersection(ALCOHOLS)>0):
+    new_set={}
+    for i in drink_ingredients:
+        new_set.add(i)
+    if len(new_set.intersection(ALCOHOLS)>0):
         return drink_name.append('Cocktail')
     else:
         return drink_name.append('Mocktail')
-
