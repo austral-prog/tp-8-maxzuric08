@@ -2,17 +2,12 @@ from sets_categories_data import (ALCOHOLS)
 
 
 def clean_ingredients(dish_name, dish_ingredients):
-    """Remove duplicates from `dish_ingredients`.
+    new_set={}
+    for i in dish_ingredients:
+        if i not in new_set:
+            new_set.add(i)
+    return (dish_name,new_set)
 
-    :param dish_name: str - containing the dish name.
-    :param dish_ingredients: list - dish ingredients.
-    :return: tuple - containing (dish_name, ingredient set).
-
-    This function should return a `tuple` with the name of the dish as the first item,
-    followed by the de-duped `set` of ingredients as the second item.
-    """
-
-    return ()
 
 
 def check_drinks(drink_name, drink_ingredients):
